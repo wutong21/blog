@@ -72,7 +72,7 @@ export default function BlogPost({ post }) {
           <div className={styles.authtext}>
             <h6>By {post.author.name} </h6>
             <h6 className={styles.date}>
-              {moment(post.datePublished).format("YYYY 年 MM 月 d 日")}
+              {moment(post.datePublished).format("YYYY-MM-d")}
             </h6>
           </div>
         </div>
