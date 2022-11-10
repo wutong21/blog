@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import { GraphQLClient, gql } from 'graphql-request';
 import BlogCard from "../components/BlogCard";
+import { GraphQLClient, gql } from 'graphql-request';
 
 const hygraph = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl9l1m65v3hji01t82v2jhmjz/master',
