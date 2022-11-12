@@ -1,7 +1,10 @@
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "../../styles/Slug.module.css";
 import moment from "moment";
-
+import "highlight.js/styles/github.css";
+import hljs from "highlight.js/lib/core";
+import javascript from "highlight.js/lib/languages/javascript";
+import { useEffect } from "react";
 const graphcms = new GraphQLClient(
   'https://api-eu-west-2.hygraph.com/v2/cl9l1m65v3hji01t82v2jhmjz/master',
 );
@@ -59,6 +62,10 @@ export async function getStaticProps({ params }) {
 }
 
 export default function BlogPost({ post }) {
+  useEffect(() => {
+    hljs.registerLanguage("jsx", javascript);
+    hljs.highlightAll();
+  });
   return (
     <main className={styles.blog}>
       <img

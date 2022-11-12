@@ -38,13 +38,16 @@
 }
 
 .blog code {
-  font-size: 1.2rem;
-  background: rgb(55, 55, 55);
-  color: rgb(246, 246, 246);
-  display: block;
+  background-color: rgb(250, 251, 255);
+  border-radius: 4px;
+  border: 1px solid rgb(208, 213, 231);
+  font-size: 0.85rem;
+  /* background: rgb(55, 55, 55); */
+  /* color: rgb(246, 246, 246); */
+  /* display: block;
   padding: 1rem;
   margin: 2rem 0rem;
-  border-radius: 2rem;
+  border-radius: 2rem; */
 }
 
 @media screen and (max-width: 768px) {
