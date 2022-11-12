@@ -1,6 +1,5 @@
 import { GraphQLClient, gql } from "graphql-request";
 import styles from "../../styles/Slug.module.css";
-import moment from "moment";
 import "highlight.js/styles/github.css";
 import hljs from "highlight.js/lib/core";
 import javascript from "highlight.js/lib/languages/javascript";
@@ -79,7 +78,7 @@ export default function BlogPost({ post }) {
           <div className={styles.authtext}>
             <h6>By {post.author.name} </h6>
             <h6 className={styles.date}>
-              {moment(post.datePublished).format("YYYY-MM-d")}
+              {post.datePublished}
             </h6>
           </div>
         </div>
