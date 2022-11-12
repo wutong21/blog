@@ -36,7 +36,18 @@
   height: 30vh;
   object-fit: cover;
 }
-
+.blog blockquote {
+  border-left: 4px solid #ffa500;
+  line-height: 24px;
+  background: #f8f8f8;
+  padding: 12px 24px 12px 30px;
+  border-left-width: 4px;
+  border-left-style: solid;
+  background-color: #f8f8f8;
+  position: relative;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+}
 .blog code {
   background-color: rgb(250, 251, 255);
   border-radius: 4px;
