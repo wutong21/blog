@@ -57,7 +57,7 @@ export default function Home({ posts }) {
       </Head>
 
       <main className={styles.main}>
-        {posts.map((post) => (
+        {posts.reverse().map((post) => (
           <BlogCard
             title={post.title}
             author={post.author}
